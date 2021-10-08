@@ -75,7 +75,7 @@ body{
     height: 200px;
     width: 200px;
     margin: 10px;
-    outline: 3px white solid;
+    outline: 3px rgb(0, 231, 249) solid;
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -88,8 +88,8 @@ body{
     border-radius: 10px;
     font-size: 15px;
     color: white;
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px) grayscale(1);
+    background-color: rgba(0, 231, 249, 0.2);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     transition: 0.3s;
     opacity: 0;
@@ -104,5 +104,10 @@ a{
 td{
     font-size: 20px;
     text-align: center;
+}
+hr{
+    opacity: 0;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 /*style="background-image: url(phoenix.jpg);"*/
