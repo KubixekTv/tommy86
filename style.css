@@ -34,7 +34,6 @@ body{
 #button:hover{
     background-color: rgb(146, 28, 138);
     outline-color: rgb(232, 46, 251);
-    transform: scale(1.05);
 }
 @keyframes logo{
     0%{transform: scale(1);}
@@ -78,7 +77,14 @@ body{
     outline: 3px rgb(0, 231, 249) solid;
     border-radius: 10px;
     transition: 0.3s;
+    animation: outline-colors 3s infinite ease-in-out;
 }
+@keyframes outline-colors {
+    0%{outline-color: rgb(0, 231, 249);}
+    50%{outline-color: rgb(255, 255, 255);}
+    100%{outline-color: rgb(0, 231, 249);}
+}
+
 #photo-track:hover{
     background-size: 120%;
     backdrop-filter: blur(3px);
@@ -89,8 +95,10 @@ body{
     font-size: 15px;
     color: white;
     backdrop-filter: blur(3px) grayscale(1);
-    background-color: rgba(0, 231, 249, 0.2);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(146, 28, 138, 0.2);
+    outline: 3px rgb(232, 46, 251) solid;
+    text-shadow: 0px 0px 3px #000, 0px 0px 3px #000;
+    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
     transition: 0.3s;
     opacity: 0;
 }
@@ -109,5 +117,10 @@ hr{
     opacity: 0;
     margin-top: 1px;
     margin-bottom: 1px;
+}
+@keyframes moving {
+    0%{transform: translate3d(0px, 0, 0);}
+    50%{transform: translate3d(5px, 0, 0);}
+    100%{transform: translate3d(0px, 0, 0);}
 }
 /*style="background-image: url(phoenix.jpg);"*/
