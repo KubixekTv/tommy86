@@ -1,0 +1,108 @@
+body{
+    background-image: url(background.jpg);
+    background-size: 100%;
+    font-family: 'Bahnschrift';
+    font-size: 25px;
+    color: white;
+    cursor: default;
+}
+#box{
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#logobarr{
+    background-color: rgba(100, 100, 100, 0.5);
+}
+#logo{
+
+}
+#logo1{
+    width: 400px;
+    animation: logo 5s infinite;
+}
+#button{
+    background-color: rgb(0, 107, 153);
+    padding: 6px;
+    outline: 3px rgb(0, 231, 249) solid;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#button:hover{
+    background-color: rgb(146, 28, 138);
+    outline-color: rgb(232, 46, 251);
+    transform: scale(1.05);
+}
+@keyframes logo{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+#content{
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: 3px white solid;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 30px;
+    text-align: justify;
+    backdrop-filter: blur(3px);
+}
+#author{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    outline: 3px white solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    backdrop-filter: blur(3px);
+}
+#table-track{
+    width: 100%;
+    border: 3px white solid;
+    border-radius: 15px;
+}
+#photo-track{
+    background-position: center;
+    background-size: 100%;
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    outline: 3px white solid;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+#photo-track:hover{
+    background-size: 120%;
+    backdrop-filter: blur(3px);
+}
+#track-option{
+    height: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transition: 0.3s;
+    opacity: 0;
+}
+#photo-track:hover #track-option{
+    opacity: 1;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+td{
+    font-size: 20px;
+    text-align: center;
+}
+/*style="background-image: url(phoenix.jpg);"*/
