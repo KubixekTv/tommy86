@@ -8,6 +8,41 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script>
+            var jeden = "https://open.spotify.com/embed/track/4caxS2JbDJ1yayZwDd1xiq";
+            var dwa = "https://open.spotify.com/embed/track/18M05UXq3JNCE01wyLmJqW";
+            var trzy = "https://open.spotify.com/embed/track/2acOVwFuUxJ8gksXUJWsxK";
+            var cztery = "https://open.spotify.com/embed/track/0PKaBLGzvn9j9K3v1pYQxQ";
+            var piec = "https://open.spotify.com/embed/track/4au0p7BdQz2uToH5Jv36el";
+            var szesc = "https://open.spotify.com/embed/track/0AanN0LxDNSOMjyC2yH4Sc";
+            var wybor;
+
+            function spotify1(){
+                wybor = jeden;
+                document.getElementById("play-track").innerHTML = "<iframe src=" + wybor + " width=\"640\" height=\"80\" frameborder=\"0\" allow=\"autoplay;\"></iframe>";
+            }
+            function spotify2(){
+                wybor = dwa;
+                document.getElementById("play-track").innerHTML = "<iframe src=" + wybor + " width=\"640\" height=\"80\" frameborder=\"0\" allow=\"autoplay;\"></iframe>";
+            }
+            function spotify3(){
+                wybor = trzy;
+                document.getElementById("play-track").innerHTML = "<iframe src=" + wybor + " width=\"640\" height=\"80\" frameborder=\"0\" allow=\"autoplay;\"></iframe>";
+            }
+            function spotify4(){
+                wybor = cztery;
+                document.getElementById("play-track").innerHTML = "<iframe src=" + wybor + " width=\"640\" height=\"80\" frameborder=\"0\" allow=\"autoplay;\"></iframe>";
+            }
+            function spotify5(){
+                wybor = piec;
+                document.getElementById("play-track").innerHTML = "<iframe src=" + wybor + " width=\"640\" height=\"80\" frameborder=\"0\" allow=\"autoplay;\"></iframe>";
+            }
+            function spotify6(){
+                wybor = szesc;
+                document.getElementById("play-track").innerHTML = "<iframe src=" + wybor + " width=\"640\" height=\"80\" frameborder=\"0\" allow=\"autoplay;\"></iframe>";
+            }
+        </script>
+
         <div id="box">
             <div id="logo">
                 <center>Strona o wykonawcy:<br>
@@ -24,27 +59,50 @@
                 <table>
                     <tr>
                         <td>
-                            <div id="photo-track" style="background-image: url(phoenix.jpg);"><div id="track-option"><hr>Utwór: Phoenix<br><hr>Album: Phoenix<br><hr>Data wydania: 2012<hr><div><img src="play.png" width="60"></div></div></div>
+                            <div id="photo-track" style="background-image: url(phoenix.jpg);">
+                                <div id="track-option">
+                                    <hr>Utwór: Phoenix<br><hr>Album: Phoenix<br><hr>Data wydania: 2012<hr><br><div onclick="spotify1()"><img src="play.png" id="aud-button"></div>
+                                </div>
+                            </div>
                         </td>
                         <td>
-                            <div id="photo-track" style="background-image: url(outrun.jpg);"><div id="track-option"><hr>Utwór: OutRun<br><hr>Album: OutRun<br><hr>Data wydania: 2012<hr><div><img src="play.png" width="60"></div></div></div>
+                            <div id="photo-track" style="background-image: url(outrun.jpg);">
+                                <div id="track-option"><hr>Utwór: OutRun<br><hr>Album: OutRun<br><hr>Data wydania: 2012<hr><br><div onclick="spotify2()"><img src="play.png" id="aud-button"></div>
+                            </div>
+                        </div>
                         </td>
                         <td>
-                            <div id="photo-track" style="background-image: url(sonuvagun.jpg);"><div id="track-option"><hr>Utwór: Sonuvagun<br><hr>Album: Freque. Modulations<br><hr>Data wydania: 2014<hr><div><img src="play.png" width="60"></div></div></div>
+                            <div id="photo-track" style="background-image: url(sonuvagun.jpg);">
+                                <div id="track-option"><hr>Utwór: Sonuvagun<br><hr>Album: Freque. Modulations<br><hr>Data wydania: 2014<hr><br><div onclick="spotify3()"><img src="play.png" id="aud-button"></div>
+                            </div>
+                        </div>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div id="photo-track" style="background-image: url(aurora.jpg);"><div id="track-option"><hr>Utwór: Aurora<br><hr>Album: Aurora<br><hr>Data wydania: 2015<hr><div><img src="play.png" width="60"></div></div></div>
+                            <div id="photo-track" style="background-image: url(aurora.jpg);">
+                                <div id="track-option"><hr>Utwór: Aurora<br><hr>Album: Aurora<br><hr>Data wydania: 2015<hr><br><div onclick="spotify4()"><img src="play.png" id="aud-button"></div>
+                            </div>
+                        </div>
                         </td>
                         <td>
-                            <div id="photo-track" style="background-image: url(launch.jpg);"><div id="track-option"><hr>Utwór: Imminent Launch<br><hr>Album: Change Of Scenery<br><hr>Data wydania: 2021<hr><div><img src="play.png" width="60"></div></div></div>
+                            <div id="photo-track" style="background-image: url(launch.jpg);">
+                                <div id="track-option"><hr>Utwór: Imminent Launch<br><hr>Album: Change Of Scenery<br><hr>Data wydania: 2021<hr><br><div onclick="spotify5()"><img src="play.png" id="aud-button"></div>
+                            </div>
+                        </div>
                         </td>
                         <td>
-                            <div id="photo-track" style="background-image: url(chase.jpg);"><div id="track-option"><hr>Utwór: The Chase<br><hr>Album: Knight<br><hr>Data wydania: 2012<hr><div><img src="play.png" width="60"></div></div></div>
+                            <div id="photo-track" style="background-image: url(chase.jpg);">
+                                <div id="track-option"><hr>Utwór: The Chase<br><hr>Album: Knight<br><hr>Data wydania: 2012<hr><br><div onclick="spotify6()"><img src="play.png" id="aud-button"></div>
+                            </div>
+                        </div>
                         </td>
                     </tr>
                 </table>
+                <br>
+                <div id="play-track">
+                    <br><br>Wybierz jeden z podanych utworów, aby go odsłuchać przy pomocy Spotify.
+                </div>
                 </center>
             </div>
             

@@ -1,4 +1,5 @@
 body{
+    user-select: none;
     background-image: url(background2.jpg);
     background-size: 100%;
     font-family: 'Bahnschrift';
@@ -13,12 +14,6 @@ body{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-}
-#logobarr{
-    background-color: rgba(100, 100, 100, 0.5);
-}
-#logo{
-
 }
 #logo1{
     width: 400px;
@@ -35,12 +30,18 @@ body{
     background-color: rgb(146, 28, 138);
     outline-color: rgb(232, 46, 251);
 }
+#toolbar{
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(100, 100, 100, 0.3);
+    transition: 0.2s;
+}
 @keyframes logo{
     0%{transform: scale(1);}
     50%{transform: scale(0.9);}
     100%{transform: scale(1);}
 }
 #content{
+    height: 600px;
     background-color: rgba(0, 0, 0, 0.8);
     outline: 3px white solid;
     padding: 20px;
@@ -48,6 +49,14 @@ body{
     margin-top: 30px;
     text-align: justify;
     backdrop-filter: blur(3px);
+}
+#bold-line{
+    height: 60px;
+    background-image: url(80slines.png);
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.5;
+    transform: scaleX(1.053);
 }
 #author{
     text-align: center;
@@ -98,7 +107,6 @@ body{
     background-color: rgba(146, 28, 138, 0.2);
     outline: 3px rgb(232, 46, 251) solid;
     text-shadow: 0px 0px 3px #000, 0px 0px 3px #000;
-    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
     transition: 0.3s;
     opacity: 0;
 }
@@ -108,6 +116,10 @@ body{
 a{
     color: white;
     text-decoration: none;
+    transition: 0.1s;
+}
+a:hover{
+    color: lightgrey;
 }
 td{
     font-size: 20px;
@@ -123,4 +135,19 @@ hr{
     50%{transform: translate3d(5px, 0, 0);}
     100%{transform: translate3d(0px, 0, 0);}
 }
-/*style="background-image: url(phoenix.jpg);"*/
+#aud-button{
+    height: 35px;
+    transition: 0.2s;
+}
+#aud-button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 5px black);
+}
+#play-track{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    height: 80px;
+    width: 640px;
+    background: linear-gradient(90deg, rgba(0,231,249, 0.2) 0%, rgba(232,46,251, 0.2) 100%);
+}
